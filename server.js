@@ -200,7 +200,7 @@ async function enviarEmail(ticker, tipoSenal, urgencia, precio, ema8, ema20, ema
       },
       body: JSON.stringify({
         personalizations: [{ to: [{ email: EMAIL_DESTINO }] }],
-        from: { email: 'alertas@trading-auto.com', name: 'TradingView Alertas' },
+        from: { email: '001taxecu@gmail.com', name: 'TradingView Alertas' },
         subject: `${emoji} ALERTA ${ticker}: ${tipoSenal} — $${precio}`,
         content: [{ type: 'text/html', value: html }]
       })
